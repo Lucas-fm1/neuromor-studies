@@ -1,0 +1,65 @@
+A_i(t) = (axon_i(t)) ? 1 : 0;
+w_ij   = (axon_i && dendrite_j) 
+
+Cada pacote de spike contém:
+    - endereço relativo do destino (dx,dy)
+    - índice de axonio de destino
+    - tick de destino (integração do spike)
+    - flags de debug (um moi)
+
+--------------------------------------------------------------------
+
+1. Implementação de Entrada Sináptica**
+   - Entrada sináptica lida com entradas:
+     - Estocásticas e determinísticas.
+   - Suporta quatro tipos diferentes de peso.
+
+
+2. Unidades de Reversão de Vazamento**
+   - Fornecem um viés constante nas dinâmicas de computação neural.
+   - Pode ser estocástico ou determinístico.
+
+
+3. Unidade Integradora**
+   - Soma o potencial de membrana do "tick" anterior com:
+     - Entradas sinápticas.
+     - Entrada de vazamento.
+
+
+4. Unidade de Limite e Reset**
+   - Compara o valor do potencial de membrana com o valor do limite.
+   - Se o potencial for maior ou igual ao limite:
+     - A unidade de neurônio redefine o potencial de membrana.
+     - Transmite um evento de "spike".
+
+
+5. Gerador de Números Aleatórios**
+   - Usado para funções estocásticas:
+     - Vazamento, sinapse e limite.
+
+
+6. Memória SRAM Principal**
+   - Armazena:
+     - Conectividade sináptica.
+     - Valores de peso, vazamento e limite.
+     - Parâmetros de configuração.
+     - Potencial de membrana, Vj(t).
+
+
+7. Ciclo de Cálculo Neural**
+   - No início e no fim do ciclo:
+     - O potencial de membrana é carregado e gravado na memória SRAM.
+
+--------------------------------------------------------------------
+
+Ao receber um pacote, o roteador usa as informações codificadas nos campos:
+ - dx (número de saltos na direção x como um inteiro de 9 bits com sinal); ou 
+ - dy (número de saltos na direção y como um inteiro de 9 bits com sinal) 
+para enviar o pacote para um dos cinco destinos:
+    - scheduler do núcleo local; ou 
+    - roteadores vizinhos mais próximos (N,S,E,W)
+
+
+
+
+

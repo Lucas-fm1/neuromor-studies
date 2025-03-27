@@ -1,0 +1,278 @@
+=========================================================================
+Arquivo: ./database/Tianjic.pdf
+=========================================================================
+
+For a single chip, the effective peak power efﬁciency is 1.28 TOPS/W
+(ANN mode) and 649 GSyOPS/W (SNN mode), and the internal memory bandwidth could reach >610 GB/s.
+
+=========================================================================
+Arquivo: ./database/IMPULSE.pdf
+=========================================================================
+
+The proposed macro was fabricated in 65nm CMOS technology, achieving an energy-efﬁciency of 0.99TOPS/W at 0.85V supply and 200MHz frequency for signed 11-bit operations.
+
+It can be observed that point D (200MHz clock and 0.85V supply) achieves optimal energy-efﬁciency with 0.99 TOPS/W for AccW2V
+(1 op = 11-bit operation).
+
+Other instructions −AccV2V, ResetV, and SpikeCheck achieve 1.18, 1.02, and 1.22 TOPS/W, respectively, at point D.
+
+An optimal energy-efﬁciency of 0.99 TOPS/W was TABLE I COMPARISON WITH OTHER SNN AND CIM MACROS.
+
+=========================================================================
+Arquivo: ./database/SNPU.pdf
+=========================================================================
+
+To sum it up, SNPU shows the state-of-the-art energy efficiency of 13.7 TOPS/W for object detection and 31.5 TOPS/W for ImageNet classification.
+
+Since the difference in the channel index calculated in each PE is not large, the area overhead due to buffer is very low, and SNPU achieves an energy efficiency of 31.5 TOPS/W under 81.3% weight sparsity (<1% accuracy drop compared to 0% sparsity) for the ImageNet classification.
+
+For CIFAR-10, 99.8 TOPS/W is achieved under 87.2% W sparsity.
+
+The peak performance is 3.28 TOPS at 0% weight sparsity and 21.36 TOPS at 90% weight sparsity (4-bit input and 2-bit weight).
+
+At 0% weight sparsity, SNPU achieves an energy efficiency of 72.29 TOPS/W with 4-bit input and 2-bit weight, 36.14 TOPS/W with 4-bit input and 4-bit weight, and 18.07 TOPS/W at 4-bit input and 8-bit weight.
+
+At 90% weight sparsity, SNPU achieves an energy efficiency of 471.13 TOPS/W with 4-bit input and 2-bit weight, 235.53 TOPS/W with 4-bit input and 4-bit weight, and Fig.
+
+117.77 TOPS/W with 4-bit input and 8-bit weight.
+
+Therefore, when weight sparsity is zero, the energy efficiency is measured as 15.3 TOPS/W for ImageNet with 67.5% accuracy.
+
+When weight sparsity is 81.3%, the energy efficiency is measured as 31.5 TOPS/W for ImageNet with 66.8% accuracy.
+
+SNPU shows the energy efficiency of 13.7 TOPS/W and 29.5 mAP by using 8-bit weight for object detection with the COCO2014 dataset and Tiny-YOLO-v3, and SNPU can process 155 frames per 1 s at maximum frequency.
+
+In addition, SNPU achieves an energy efficiency of 31.5 TOPS/W and 67.5% accuracy for ImageNet object classification with ResNet-18, and it can achieve 245 frames/s throughput at maximum frequency.
+
+Moreover, the energy efficiency of SNPU can increase to 31.5 TOPS/W by weight pruning with less than 1% accuracy loss.
+
+In addition, SNPU achieves the energy efficiency of 36.5 TOPS/W and 90.1% accuracy with 4-bit weight for CIFAR-10 classification with ResNet-12.
+
+The efficiency can increase to 99.8 TOPS/W by adopting weight pruning with less than 1% accuracy degradation.
+
+[14] consumed hundreds of microwatts of power despite using binary weight, and the energy efficiency is only 13.3–15.2 TOPS/W.
+
+SNPU shows the state-of-the-art energy efficiency of 13.7 TOPS/W for object detection and 31.5 TOPS/W for ImageNet task.
+
+=========================================================================
+Arquivo: ./database/uenohara.pdf
+=========================================================================
+
+We demonstrate the energy efﬁciency of 6.24–18.7 TOPS/W in a multitarget spike learning task.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor but hardware based on CIM processors is mostly inference hardware that has synaptic weights of 1–4 bits to reduce the footprint and energy consumption of the digital-to-analog converter (DAC), and implementation of hardware using the CIM approach with on-chip learning of synaptic weights exceeding 4 bits is a challenge.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor FIGURE 2.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor FIGURE 3.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor FIGURE 6.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor FIGURE 9.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor FIGURE 10.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor TABLE 4.
+
+DISCUSSION CMOS ANN hardware for inference has already achieved high energy efﬁciency of more than 600 TOPS/W with MAC operations based on a CIM architecture [29] by limiting the bit-width of the synaptic weights as shown in Table 4.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor is suitable for realizing information processing devices in which a sensor is directly connected to the information processing unit.
+
+As Table 4 shows, the energy efﬁciency of ASICs with learning is only a few TOPS/W, which is lower than that of ASICs without learning.
+
+In this study, we sacriﬁced integration and achieved high energy efﬁciency of up to 18.7 TOPS/W during learning by distributing the memory and weight update circuits in each synaptic circuit.
+
+This efﬁciency during learning was higher than the 15.4 TOPS/W during inference because the number of operations was larger than the 2 OP of the MAC operation (see Note C in Table 4), and this operation is executed efﬁciently by using the time domain.
+
+Thus, energy efﬁciency during inference was 2 [OP]/129.8 [fJ] ≃15.40 [TOPS/W].
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor A learning operation consists of pre-spike × weight and its summation (2 OP), post-spike × time window and its subtraction from the weight (2 OP), and target spike × time window and its addition to the weight (2 OP).
+
+Thus, energy efﬁciency during learning was 6 [OP]/320.4 [fJ] ≃18.72 [TOPS/W].
+
+Thus, energy efﬁciency was 2 [OP]/320.4 [fJ] = 6.242 [TOPS/W].
+
+(11) From the above, the energy efﬁciency during learning was between 6.242 [TOPS/W] and 18.72 [TOPS/W].
+
+Nose, ‘‘A ternary based bit scalable, 8.80 TOPS/W CNN accelerator with many-core processingin-memory architecture with 896K synapses/mm2,’’ in Proc.
+
+Gohou, ‘‘A 4M synapses integrated analog ReRAM based 66.5 TOPS/W neural-network processor with cell current controlled writing and ﬂexible network architecture,’’ in Proc.
+
+Flynn, ‘‘A 3.43 TOPS/W 48.9 pJ/pixel 50.1 nJ/classiﬁcation 512 analog neuron sparse coding neural network with on-chip learning and classiﬁcation in 40nm CMOS,’’ in Proc.
+
+Aihara: 18.7 TOPS/W Mixed-Signal Spiking Neural Network Processor
+[33] S.
+
+=========================================================================
+Arquivo: ./database/Tempo-CIM.pdf
+=========================================================================
+
+The macro measures 0.084mm2 in a 40nm process with an energy efficiency of 68.51 TOPS/W and an area efficiency of 0.1956 TOPS/mm2 for 4b input and 8b weight.
+
+To balance, a weight precision of 8b can provide better overall performance with a high energy efficiency of 117.9 TOPS/W.
+
+The macro measures 0.084mm2 with an energy efficiency of 117.9 TOPS/W and area efficiency of 0.1956 TOPS/mm2 for 4b input and 8b weight, which achieves at least 2.6X improvement in normalized energy efficiency FoM in comparison with the state-of-the-art works.
+
+=========================================================================
+Arquivo: ./database/NeuroSLAM.pdf
+=========================================================================
+
+This article presents a 7.25-to-8.79-TOPS/W mixed-signal oscillatorbased SLAM accelerator for applications in edge robotics.
+
+The test chip fabricated in a 65-nm CMOS exhibits a peak energy efﬁciency of 8.79 TOPS/W with a power consumption of 23.82 mW.
+
+We demonstrate a test-chip performing visual SLAM with an energy efﬁciency of 7.25–8.79 TOPS/W where the power consumption is 17.27–23.82 mW, respectively.
+
+The energy efﬁciency of 7.25– 8.79 TOPS/W is achieved.
+
+CONCLUSION This article presents a 7.25-to-8.79-TOPS/W mixed-signal oscillator-based NeuroSLAM accelerator for applications in edge robotics.
+
+The test chip fabricated in a 65-nm CMOS exhibits a peak energy efﬁciency of 8.79 TOPS/W with a power consumption of 23.82 mW.
+
+=========================================================================
+Arquivo: ./database/COOL-NPU.pdf
+=========================================================================
+
+For ImageNet classiﬁcation, CNN core and SNN core achieve 17.5TOPS/W and 20.8TOPS/W, respectively.
+
+In DNN training, COOL-NPU achieves 17.2TOPS/W for ImageNet by using neuron-level BP, which is 60.7% better than the previous state-of-the-art [4].
+
+=========================================================================
+Arquivo: ./database/C-DNN.pdf
+=========================================================================
+
+ResNet-18 shows an average  of 95.8% spike sparsity for ImageNet, and the C-DNN without the ATM operation  achieves 20.2TOPS/W, which is 43.3% higher than the SNN core alone and 16.7% higher  than the CNN core.
+
+The ATM can achieve 97.9% spike sparsity for ResNet-18 with  ImageNet, and 26.2TOPS/W which is 85.8% higher than the SNN core alone and 51.4%  higher than the CNN core.
+
+For ImageNet classiﬁcation, CNN standalone mode and SNN standalone mode  achieve 17.5TOPS/W and 20.8TOPS/W, respectively.
+
+And, C-DNN mode achieves  24.5TOPS/W, which is 53.1% higher than a previous state-of-the-art CNN processor [4].
+
+In C-DNN training, it achieves 17.2TOPS/W for ImageNet by using FGSG, which is 60.7%  better than [6].
+
+Moreover, it achieves  85.8TOPS/W and 79.9TOPS/W for CIFAR-10 and CIFAR-100, respectively.
+
+In conclusion, we propose  a C-DNN processor having a complementary combination of a CNN and SNN for energyefﬁcient inference and training with high accuracy, and it shows 77.1% accuracy for  ImageNet with state-of-the-art energy efﬁciency of 24.5TOPS/W (in ResNet-50).
+
+=========================================================================
+Arquivo: ./database/jingwen.pdf
+=========================================================================
+
+The macro measures 0.084mm2 in a 40nm process with an energy efficiency of 68.51 TOPS/W and an area efficiency of 0.1956 TOPS/mm2 for 4b input and 8b weight.
+
+To balance, a weight precision of 8b can provide better overall performance with a high energy efficiency of 117.9 TOPS/W.
+
+The macro measures 0.084mm2 with an energy efficiency of 117.9 TOPS/W and area efficiency of 0.1956 TOPS/mm2 for 4b input and 8b weight, which achieves at least 2.6X improvement in normalized energy efficiency FoM in comparison with the state-of-the-art works.
+
+=========================================================================
+Arquivo: ./database/C-DNN_V2.pdf
+=========================================================================
+
+In conclusion, we propose the C-DNN V2 as an optimal complementary DNN processor, delivering 76.9% accuracy for ImageNet classification with a state-of-the-art energy efficiency of 32.8 TOPS/W.
+
+Furthermore, C-DNN V2 achieves an energy efficiency of 102.1 TOPS/W for CIFAR-10 classification with 4-bit input and 4-bit weight.
+
+For ImageNet classification with ResNet-50, C-DNN V2 achieves an energy efficiency of 32.8 TOPS/W under 8-bit input and 8-bit weight.
+
+Under the conditions of 200 MHz and 16 time steps, with 4 SNN clusters exhibiting a throughput of 2.05 TOPS (4 [# of cluster] ×10 [# of SNN core] ×16 [# of TS block] ×4
+[# of adder tree in TS block] ×32 [# of fan-in of adder tree] ×200M [frequency] ×2 [1MAC=2OPs] ÷16 [# of timestep]), 4 CNN clusters showing a throughput of 0.10 TOPS
+(4 [# of cluster] ×8 [# of HSCC] ×8 [# of PE] ×200M
+[frequency] ×2 [1MAC=2OPs]) at 0% data-level sparsity and 1.02 TOPS at 90% data-level sparsity.
+
+Finally, the C-DNN V2 achieves a resulting throughput of 2.15 TOPS at 0% data-level sparsity.
+
+The CNN domain state-of-the-art processor [16] achieves an energy efficiency of 16.0 TOPS/W for ImageNet classification using ResNet-50, but it exhibits a low accuracy of 70.09%.
+
+The SNN domain state-ofthe-art processor [17] demonstrates an energy consumption of 5.3 pJ/SOP per spike, which is equivalent to 4.9 TOPS/W.
+
+Moreover, [20] achieved an energy efficiency of 38.6 TOPS/W for ImageNet classification.
+
+It achieved an energy efficiency of 24.5 TOPS/W for ImageNet classification with ResNet-50 and reached an accuracy of 77.1%.
+
+As a result, C-DNN V2 achieves an energy efficiency of 32.8 TOPS/W for ImageNet classification, which is 34% higher than the previous C-DNN V1.
+
+In conclusion, we propose the C-DNN processor V2 as an optimal complementary DNN processor, achieving 76.9% accuracy for ImageNet with state-of-the-art energy efficiency of 32.8 TOPS/W (@ ResNet-50).
+
+=========================================================================
+Arquivo: ./database/Neuro-CIM.pdf
+=========================================================================
+
+Moreover, the proposed CIM processor achieves 310.37 tera operations per second/watt (TOPS/W) and 90.7% accuracy with 4-b input and 1-b weight for Canadian Institute for Advanced Research, 10 classes (CIFAR-10) classification.
+
+Neuro-CIM achieves an energy efficiency of 124.15 tera operations per second/watt
+(TOPS/W) (input = 4 b and weight = 4 b) with 92.1% accuracy and 310.37 TOPS/W (input = 4 b and weight = 1 b) with 90.7% accuracy at 200 MHz, and 1.1-V conditions
+(@ResNet-12, CIFAR-10).
+
+The macro shows 1.03-POPS/W (peta operations per second/watt) energy efficiency at 4-b input and 1-b weight and 413.83-TOPS/W energy efficiency at 4-b input and 4-b weight.
+
+In addition, NeuroCIM achieves an energy efficiency of 124.15 TOPS/W for the CIFAR-10 with ResNet-12, which requires 0.06 GOP/frame
+(giga operations per frame).
+
+Also, Neuro-CIM can achieve 117.98 and 103.06 TOPS/W for VGG-16 and ResNet-18, respectively (CIFAR-10 classification with 4-b input and 4-b Fig.
+
+Moreover, it achieves an energy efficiency of 37.24, 32.61, and 15.1 TOPS/W for VGG-16, ResNet-18, and MobileNet, respectively (ImageNet classification with 6-b input and 8-b weight).
+
+The macro shows 1.03-POPS/W peak energy efficiency at 4-b input and 1-b weight and 413.83-TOPS/W peak energy efficiency at 4-b input and 4-b weight.
+
+As a result, NeuroCIM with an energy efficiency of 310.37 TOPS/W and an area efficiency of 546.1 TOPS/mm2 is proposed in this article for high energy-efficient neural network processing.
+
+Flynn,
+“A 3.43 TOPS/W 48.9 pJ/pixel 50.1 nJ/classification 512 analog neuron sparse coding neural network with on-chip learning and classification in 40 nm CMOS,” in Proc.
+
+Bol, “A 1-to-4b 16.8-POPS/W 473-TOPS/mm2 6T-based in-memory computing SRAM in 22 nm FD-SOI with multi-bit analog batch-normalization,” in Proc.
+
+=========================================================================
+Arquivo: ./database/park.pdf
+=========================================================================
+
+Flynn,
+“A 3.43TOPS/W 48.9pJ/pixel 50.1nJ/classiﬁcation 512 analog neuron sparse coding neural network with on-chip learning and classiﬁcation in 40nm CMOS,” in Proc.
+
+=========================================================================
+Arquivo: ./database/spinnaker-2.pdf
+=========================================================================
+
+At the two DVFS PLs 1.47TOPS/W (at 0.50V, 200MHz) and 1.51TOPS/W (at 0.60V, 400MHz) are achieved, respectively.
+
+For this scenario we can achieve 1.75TOPS/W (at 0.50V, 320MHz).
+
+Measured PE CoreMark benchmark energy efﬁciency
+ 7 100 125 150 167 200 225 250 267 300 320 360 375 400 FCPU [MHz] 0.6 0.55 0.5 0.45 VDD04 [V] best efficiency FAIL PASS 1.0 1.2 1.4 1.6 TOPS/W Fig.
+
+Timer measurements are used for throughput calculation - shmoo show TOPS/W on the right bar - shmoo conv if better values lenet_ conv2d_1 mobnv2_ conv2d_0 resnet_ conv2d_3 vgg_ conv2d_1 lenet_ dense vgg_ dense_1 layers 10 1 10 0 10 1 10 2 t [ms] Fig.
+
+lenet_ conv2d_1 mobnv2_ conv2d_0 resnet_ conv2d_3 vgg_ conv2d_1 lenet_ dense vgg_ dense_1 layers 10 3 10 2 10 1 10 0 TOPS/W [ms] Fig.
+
+=========================================================================
+Arquivo: ./database/Lien.pdf
+=========================================================================
+
+The accelerator with the TSMC 28nm CMOS process can achieve 1024×576@29 frames per second processing when running at 500MHz with 35.88TOPS/W energy efﬁciency and 1.05mJ energy consumption per frame.
+
+The ﬁnal implementation can attain 1024×576@29 frames per second processing when running at 500MHz with 35.88TOPS/W energy efﬁciency and 1.05mJ energy consumption per frame.
+
+The proposed design achieves area efﬁciency of 1093 GOPS/mm2 and energy efﬁciency of 35.88 TOPS/W that exceeds most of the other designs due to our simple calculation elements and simple control for skipping zero weights.
+
+(TOPS/W) 18.9 35.88c,d 7.70 6.24d 3.4 6.24d a1 GMACS = 2 GOPS.
+
+The implementation result can achieve the detection rate at 1024×576@29 frames per second when operating at 500MHz clock frequency and an energy efﬁciency of 35.88TOPS/W with the 1.05mJ energy consumption per frame.
+
+=========================================================================
+Arquivo: ./database/buhler.pdf
+=========================================================================
+
+C30 978-4-86348-606-5 ©2017 JSAP 2017 Symposium on VLSI Circuits Digest of Technical Papers A 3.43TOPS/W 48.9pJ/Pixel 50.1nJ/Classification 512 Analog Neuron Sparse Coding  Neural Network with On-Chip Learning and Classification in 40nm CMOS  Fred N.
+
+This work demonstrates large-scale integration  of 512 analog neurons using a traditional scalable digital  workflow to achieve a best-of-class power efficiency of  3.43TOPS/W for object classification.
+
+This work demonstrates large-scale integration of 512  analog neurons using a traditional scalable digital workflow to  achieve a best-of-class power efficiency of 3.43TOPS/W for  object classification.
+
+=========================================================================
+Arquivo: ./database/Deepfire2.pdf
+=========================================================================
+
+The DF2 ImageNet performance is 21 TOPS (tera-operations per second) which about 78% of the total DSP performance and it delivers approximately 86 images per TOPS.
+
+We maximize the DSP usage to achieve a high FPS/TOPS ratio.
+

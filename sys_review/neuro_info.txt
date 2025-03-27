@@ -1,0 +1,35 @@
+===================================================================
+ Artigos que usam a ImageNet
+===================================================================
+
+C-DNN.txt:          ImageNet with state-of-the-art energy efﬁciency of 24.5TOPS/W (in ResNet-50).
+C-DNN_V2.txt:       accuracy for ImageNet with state-of-the-art energy efficiency
+Cerebron.txt:       smaller than ImageNet, we change the stride of the ﬁrst three
+COOL-NPU.txt:       For ImageNet classiﬁcation, CNN core and SNN core achieve 17.5TOPS/W
+Deepfire2.txt:      The DF2 ImageNet performance is 21 TOPS (tera-operations per second) which
+Firefly.txt:        input feature maps from larger datasets, such as ImageNet.
+jindong_li.txt:     input feature maps from larger datasets, such as ImageNet.
+MorphIC.txt:        ImageNet.
+Neuro-CIM.txt:      ImageNet with 6-b input and 8-b weight at 200 MHz, and 1.1-V
+SNPU.txt:           for ImageNet object classification with ResNet-18, and it
+SpinalFlow.txt:     ImageNet
+Tianjic.txt:        large (e.g., 224 for ImageNet data set ) that the number
+
+===================================================================
+ Artigos que usam a CIFAR-10
+===================================================================
+
+buchel.txt:         performance of ResNet-9  evaluated on the CIFAR-10 
+C-DNN_V2.txt:       efficiency of 102.1 TOPS/W for CIFAR-10 classification with
+Cerebron.txt:       MobileNet on CIFAR-10, and SegNet on the MLND-Capstone
+COOL-NPU.txt:       (BP/GG) and 31%/43% of computations are skipped for CIFAR-10 and ImageNet.
+Firefly.txt:        for CIFAR-10, CIFAR-100, and ImageNet classification are
+jindong_li.txt:     for CIFAR-10, CIFAR-100, and ImageNet classification are
+MorphIC.txt:        been applied to speciﬁc datasets such as MNIST, CIFAR-10 or
+Neuro-CIM.txt:      the power consumption for CIFAR-10 classification by 30.1%
+nguyen.txt:         CIFAR-10 dataset, with the software simulation, the accuracy
+park.txt:           of the CIFAR-10 images  in software simulation.
+Shenjing.txt:       (c) CIFAR-10
+Shenjing.txt:       CIFAR-10 ResNet deep learning benchmark using 5863 cores
+SNPU.txt:           CIFAR-10 dataset but also for the ImageNet dataset through
+verma.txt:          for CIFAR-10 classification utilize the concept of CNN to
